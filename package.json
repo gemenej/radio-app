@@ -1,0 +1,36 @@
+{
+  "name": "radio-app",
+  "version": "1.0.0",
+  "description": "streaming project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gemenej/radio-app.git"
+  },
+  "keywords": [
+    "streaming",
+    "radio",
+    "ffmpeg",
+    "mpd",
+    "angular",
+    "node"
+  ],
+  "author": "Georgem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gemenej/radio-app/issues"
+  },
+  "homepage": "https://github.com/gemenej/radio-app#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.57.2",
+    "@typescript-eslint/parser": "^8.57.2",
+    "eslint": "^10.1.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.1"
+  }
+}

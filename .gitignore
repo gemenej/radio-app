@@ -1,0 +1,93 @@
+# ── Node.js ──────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.pnpm-store
+
+# ── Build outputs ─────────────────────────────────────────
+dist/
+build/
+out/
+.output/
+
+# ── Nx ───────────────────────────────────────────────────
+.nx/cache
+.nx/workspace-data
+tmp/
+
+# ── Angular ───────────────────────────────────────────────
+.angular/
+apps/**/dist/
+apps/**/.angular/
+
+# ── Environment & secrets ─────────────────────────────────
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+*.pem
+*.key
+*.cert
+
+# ── Audio / Media (generated files) ──────────────────────
+data/mixes/*/segments/
+data/mixes/*/manifest.mpd
+data/tracks/*.wav
+data/tracks/*.aiff
+data/tracks/*.flac
+# Зберігаємо тільки metadata JSON, не самі аудіофайли
+# mp3/ogg — додай нижче якщо теж не хочеш в репо:
+# data/tracks/*.mp3
+# data/tracks/*.ogg
+
+# ── DASH segments (тимчасові) ─────────────────────────────
+**/*.m4s
+**/*.ts
+!apps/**/*.ts
+!services/**/*.ts
+!tools/**/*.ts
+
+# ── Logs ─────────────────────────────────────────────────
+logs/
+*.log
+pino-*.log
+
+# ── OS ───────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# ── IDE (крім .vscode — його ми комітимо) ────────────────
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── VSCode — комітимо тільки потрібне ────────────────────
+# .vscode/ — НЕ ігноруємо повністю, бо там mcp.json, settings.json, extensions.json
+.vscode/*.code-workspace
+.vscode/launch.json
+
+# ── Testing ───────────────────────────────────────────────
+coverage/
+.vitest/
+playwright-report/
+test-results/
+
+# ── Docker ───────────────────────────────────────────────
+.docker/
+
+# ── Misc ─────────────────────────────────────────────────
+*.tgz
+*.zip
+.cache/
+.temp/

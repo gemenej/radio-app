@@ -1,0 +1,29 @@
+{
+  "servers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem",
+        "${workspaceFolder}/data",
+        "${workspaceFolder}/apps",
+        "${workspaceFolder}/services"
+      ]
+    },
+    "git": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git",
+        "--repository", "${workspaceFolder}"
+      ]
+    },
+    "ffmpeg-tools": {
+      "command": "node",
+      "args": ["${workspaceFolder}/tools/mcp-ffmpeg/index.js"],
+      "env": {
+        "AUDIO_DATA_PATH": "${workspaceFolder}/data"
+      }
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"]
+    }
+  }
+}
