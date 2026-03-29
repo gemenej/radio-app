@@ -1,6 +1,7 @@
 {
   "github.copilot.chat.agent.enabled": true,
   "github.copilot.chat.experimental.agentDesktop": true,
+  "github.copilot.chat.defaultModel": "claude-sonnet-4",
 
   "github.copilot.editor.enableCodeCompletions": true,
   "github.copilot.renameSuggestions.triggerAutomatically": true,

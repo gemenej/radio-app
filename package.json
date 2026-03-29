@@ -27,14 +27,18 @@
   },
   "homepage": "https://github.com/gemenej/radio-app#readme",
   "devDependencies": {
+    "@angular-devkit/core": "~21.2.0",
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
+    "@nx/angular": "^22.6.3",
+    "@nx/node": "^22.6.3",
     "@typescript-eslint/eslint-plugin": "^8.57.2",
     "@typescript-eslint/parser": "^8.57.2",
     "commitlint": "^20.5.0",
     "eslint": "^10.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
+    "nx": "22.6.3",
     "prettier": "^3.8.1"
   },
   "lint-staged": {
@@ -42,5 +46,6 @@
       "prettier --write",
       "eslint --fix"
     ]
-  }
+  },
+  "nx": {}
 }

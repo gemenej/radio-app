@@ -2,16 +2,12 @@
   "servers": {
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
         "${workspaceFolder}/data",
         "${workspaceFolder}/apps",
         "${workspaceFolder}/services"
-      ]
-    },
-    "git": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-git",
-        "--repository", "${workspaceFolder}"
       ]
     },
     "ffmpeg-tools": {

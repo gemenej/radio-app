@@ -91,3 +91,4 @@ test-results/
 *.zip
 .cache/
 .temp/
+.angular
